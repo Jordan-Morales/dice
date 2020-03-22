@@ -1,1 +1,7 @@
 /* linked */
+
+.resultLog {
+  height: 150px;
+  overflow: scroll;
+
+}
