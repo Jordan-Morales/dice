@@ -3,5 +3,16 @@
 .resultLog {
   height: 150px;
   overflow: scroll;
+  list-style: none;
+}
 
+.title {
+  font-size:  2em;
+  font-weight: bolder;
+  text-decoration: underline;
+  /* text-align: center; */
+
+}
+.col {
+  text-align: center;
 }
