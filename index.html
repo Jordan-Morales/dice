@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -13,7 +15,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row dieRow">
+        <img src="img/d4.png" id="d4Toggle" height="10%" width="10%" alt="">
+        <img src="img/d6.png" id="d6Toggle" height="10%" width="10%" alt="">
+        <img src="img/d8.png" id="d8Toggle" height="10%" width="10%" alt="">
+        <img src="img/d20.png" id="d20Toggle" height="10%" width="10%" alt="">
+      </div>
+      <div class="row titleRow">
         <div class="col">
           <span class="title">
             How Many?</span>
@@ -31,7 +39,7 @@
             Total</span>
         </div>
       </div>
-      <div class="row">
+      <div class="row dieFourRow">
         <div class="col">
           <input type="number" name="dieFourInput" id="dieFourInput">
         </div>
@@ -52,7 +60,7 @@
 
 
 
-      <div class="row">
+      <div class="row dieSixRow">
         <div class="col">
           <input type="number" name="dieSixInput" id="dieSixInput">
         </div>
@@ -71,7 +79,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row dieEightRow">
         <div class="col">
           <input type="number" name="dieEightInput" id="dieEightInput">
         </div>
@@ -90,7 +98,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row dieTwentyRow">
         <div class="col">
           <input type="number" name="dieTwentyInput" id="dieTwentyInput">
         </div>

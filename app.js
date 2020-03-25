@@ -3,6 +3,27 @@
 //jQuery
 $ (() => {
 
+
+// hide all die rows
+  $('.dieFourRow').hide();
+  $('.dieSixRow').hide();
+  $('.dieEightRow').hide();
+  $('.dieTwentyRow').hide();
+// establish toggle display of dieRow
+  $('#d4Toggle').on('click', () => {
+    $('.dieFourRow').toggle()
+  })
+  $('#d6Toggle').on('click', () => {
+    $('.dieSixRow').toggle()
+  })
+  $('#d8Toggle').on('click', () => {
+    $('.dieEightRow').toggle()
+  })
+  $('#d20Toggle').on('click', () => {
+    $('.dieTwentyRow').toggle()
+  })
+
+// add die set to get total number
   getSum = (total, num) => {
     return total + Math.round(num);
   }
@@ -79,18 +100,19 @@ $ (() => {
         $('#resultTwenty').text(resultTwenty);
     })
 
-    $('#die_Button').on('click', () => {
-      let repeater = $('#die_Input').val();
-      let result_Array = [];
-        for (let x = 0; x < repeater; x++) {
-            let die_ = generateRandom_();
-            result_Array.push(die_);
-            let listItem = $('<li>' + die_ + '</li>')
-            $('#die_ResultLog').prepend(listItem)
-        }
-        let result_ = result_Array.reduce(getSum, 0);
-        $('#result_').text(result_);
-    })
+// ready for additional die
+    // $('#die_Button').on('click', () => {
+    //   let repeater = $('#die_Input').val();
+    //   let result_Array = [];
+    //     for (let x = 0; x < repeater; x++) {
+    //         let die_ = generateRandom_();
+    //         result_Array.push(die_);
+    //         let listItem = $('<li>' + die_ + '</li>')
+    //         $('#die_ResultLog').prepend(listItem)
+    //     }
+    //     let result_ = result_Array.reduce(getSum, 0);
+    //     $('#result_').text(result_);
+    // })
 
 
 

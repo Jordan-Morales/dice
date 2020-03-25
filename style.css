@@ -16,3 +16,8 @@
 .col {
   text-align: center;
 }
+
+.dieRow {
+  display: flex;
+  justify-content: space-around;
+}
