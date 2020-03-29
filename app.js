@@ -36,6 +36,14 @@ $ (() => {
     $('#dieFourButton').on('click', () => {
       let repeater = $('#dieFourInput').val();
       let resultFourArray = [];
+
+      // replace self to allow for new spin
+      let el = $('#die4');
+      let newone = el.clone(true);
+      el.replaceWith(newone);
+      // add spin class
+      $('#die4').addClass('buttonDieSpin');
+
         for (let x = 0; x < repeater; x++) {
             let dieFour = generateRandomFour();
             resultFourArray.push(dieFour);
@@ -54,6 +62,14 @@ $ (() => {
     $('#dieSixButton').on('click', () => {
       let repeater = $('#dieSixInput').val();
       let resultSixArray = [];
+
+      // replace self to allow for new spin
+      let el = $('#die6');
+      let newone = el.clone(true);
+      el.replaceWith(newone);
+      // add spin class
+      $('#die6').addClass('buttonDieSpin');
+
         for (let x = 0; x < repeater; x++) {
             let dieSix = generateRandomSix();
             resultSixArray.push(dieSix);
@@ -72,6 +88,14 @@ $ (() => {
     $('#dieEightButton').on('click', () => {
       let repeater = $('#dieEightInput').val();
       let resultEightArray = [];
+
+      // replace self to allow for new spin
+      let el = $('#die8');
+      let newone = el.clone(true);
+      el.replaceWith(newone);
+      // add spin class
+      $('#die8').addClass('buttonDieSpin');
+
         for (let x = 0; x < repeater; x++) {
             let dieEight = generateRandomEight();
             resultEightArray.push(dieEight);
@@ -90,6 +114,14 @@ $ (() => {
     $('#dieTwentyButton').on('click', () => {
       let repeater = $('#dieTwentyInput').val();
       let resultTwentyArray = [];
+
+      // replace self to allow for new spin
+      let el = $('#die20');
+      let newone = el.clone(true);
+      el.replaceWith(newone);
+      // add spin class
+      $('#die20').addClass('buttonDieSpin');
+
         for (let x = 0; x < repeater; x++) {
             let dieTwenty = generateRandomTwenty();
             resultTwentyArray.push(dieTwenty);
@@ -98,12 +130,20 @@ $ (() => {
         }
         let resultTwenty = resultTwentyArray.reduce(getSum, 0);
         $('#resultTwenty').text(resultTwenty);
+
     })
 
 // ready for additional die
     // $('#die_Button').on('click', () => {
     //   let repeater = $('#die_Input').val();
     //   let result_Array = [];
+
+    // replace self to allow for new spin
+    // let el = $('#die_');
+    // let newone = el.clone(true);
+    // el.replaceWith(newone);
+    // // add spin class
+    // $('#die_').addClass('buttonDieSpin');
     //     for (let x = 0; x < repeater; x++) {
     //         let die_ = generateRandom_();
     //         result_Array.push(die_);

@@ -21,3 +21,20 @@
   display: flex;
   justify-content: space-around;
 }
+
+
+.buttonDieSpin {
+  z-index: -1;
+  transform-origin: center;
+  animation: spin 0.2s 1 linear;
+}
+
+
+/**********************************
+Add animations here
+*********************************/
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(600deg);}
+}
