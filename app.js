@@ -50,6 +50,7 @@ $ (() => {
             let listItem = $('<li>' + dieFour + '</li>')
             $('#dieFourResultLog').prepend(listItem)
         }
+        $('#dieFourResultLog').prepend('<li>---</li>');
         let resultFour = resultFourArray.reduce(getSum, 0);
         $('#resultFour').text(resultFour);
     })
@@ -76,6 +77,7 @@ $ (() => {
             let listItem = $('<li>' + dieSix + '</li>')
             $('#dieSixResultLog').prepend(listItem)
         }
+        $('#dieSixResultLog').prepend('<li>---</li>');
         let resultSix = resultSixArray.reduce(getSum, 0);
         $('#resultSix').text(resultSix);
     })
@@ -102,6 +104,7 @@ $ (() => {
             let listItem = $('<li>' + dieEight + '</li>')
             $('#dieEightResultLog').prepend(listItem)
         }
+        $('#dieEightResultLog').prepend('<li>---</li>');
         let resultEight = resultEightArray.reduce(getSum, 0);
         $('#resultEight').text(resultEight);
     })
@@ -126,8 +129,9 @@ $ (() => {
             let dieTwenty = generateRandomTwenty();
             resultTwentyArray.push(dieTwenty);
             let listItem = $('<li>' + dieTwenty + '</li>')
-            $('#dieTwentyResultLog').prepend(listItem)
+            $('#dieTwentyResultLog').prepend(listItem);
         }
+        $('#dieTwentyResultLog').prepend('<li>---</li>');
         let resultTwenty = resultTwentyArray.reduce(getSum, 0);
         $('#resultTwenty').text(resultTwenty);
 
